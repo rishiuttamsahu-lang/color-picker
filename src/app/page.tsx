@@ -349,14 +349,13 @@ export default function Home() {
 
       {/* ── How It Works Section ── */}
       <section
-        id="how-it-works"
         className="py-24 px-4 flex flex-col items-center justify-center"
         style={{
           background: 'linear-gradient(25deg, rgba(255, 167, 246, 0.7) 0%, rgba(245, 243, 255, 0.7) 45%, rgba(196, 255, 236, 0.7) 100%)',
         }}
       >
         <div className="w-full max-w-5xl">
-          <FadeInUp>
+          <FadeInUp id="how-it-works">
             <div className="mb-16 text-center">
               <h2 className={cn("text-[32px] md:text-[44px] font-semibold tracking-tight text-gray-900 leading-none", barlow.className)}>
                 How it <span className={cn("text-gray-400", instrument.className)}
@@ -430,14 +429,13 @@ export default function Home() {
 
       {/* ── Features Section (Bento Grid) ── */}
       <section
-        id="features"
         className="py-24 px-4 flex flex-col items-center justify-center"
         style={{
           background: 'linear-gradient(150deg, rgba(255, 167, 246, 0.7) 0%, rgba(245, 243, 255, 0.7) 45%, rgba(255, 215, 168, 0.7) 100%)',
         }}
       >
         <div className="w-full max-w-5xl">
-          <FadeInUp>
+          <FadeInUp id="features">
             <div className="mb-16 text-center">
               <h2 className={cn("text-[32px] md:text-[44px] font-semibold tracking-tight text-gray-900 leading-none", barlow.className)}>
                 Pro-level <span className={cn("text-gray-400", instrument.className)}
@@ -524,14 +522,13 @@ export default function Home() {
 
       {/* ── Shortcuts Section ── */}
       <section
-        id="shortcuts"
         className="py-24 px-4 flex flex-col items-center justify-center pb-32"
         style={{
           background: 'linear-gradient(200deg, rgba(255, 215, 168, 0.7) 0%, rgba(245, 243, 255, 0.7) 45%, rgba(224, 231, 255, 0.7) 100%)',
         }}
       >
         <div className="w-full max-w-3xl">
-          <FadeInUp>
+          <FadeInUp id="shortcuts">
             <div className="mb-12 text-center">
               <h2 className={cn("text-[32px] md:text-[44px] font-semibold tracking-tight text-gray-900 leading-none", barlow.className)}>
                 Built for <span className={cn("text-gray-400", instrument.className)}
@@ -663,7 +660,7 @@ export default function Home() {
           {/* Left Column: Sticky Header */}
           <div className="lg:col-span-5">
             <div className="sticky top-32">
-              <FadeInUp delay={0}>
+              <FadeInUp id="faq" delay={0}>
                 <h2 className={cn("text-[36px] md:text-[48px] font-semibold tracking-tight text-gray-900 leading-none text-left", barlow.className)}>
                   Frequently asked <br className="hidden lg:block" />
                   <span className={cn("text-gray-400", instrument.className)}>questions</span>

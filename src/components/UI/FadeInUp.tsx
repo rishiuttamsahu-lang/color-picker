@@ -4,24 +4,43 @@ interface FadeInUpProps {
   children: React.ReactNode;
   delay?: number;
   className?: string;
+  id?: string; // Add ID prop
 }
 
-export function FadeInUp({ children, delay = 0, className = "" }: FadeInUpProps) {
+export function FadeInUp({ children, delay = 0, className = "", id }: FadeInUpProps) {
   const [isVisible, setIsVisible] = useState(false);
   const domRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    // 1. Hash Link Check (For clicking anchor links like #features)
+    const currentHash = window.location.hash;
+    if (id && currentHash === `#${id}`) {
+      setIsVisible(true);
+      return; 
+    }
+
+    // 2. NEW FIX: Browser "Back" Button Scroll Restoration Check
+    // If the element is already inside or above the viewport the moment it mounts,
+    // force it to be visible instantly to prevent blank gaps.
+    if (domRef.current) {
+      const rect = domRef.current.getBoundingClientRect();
+      if (rect.top <= window.innerHeight) {
+        setIsVisible(true);
+        return; // Skip the observer entirely!
+      }
+    }
+
+    // 3. Normal Observer Logic (For regular scrolling down the page)
     const observer = new IntersectionObserver(
       (entries) => {
-        // If the element crosses into the screen (even on initial load)
         if (entries[0].isIntersecting) {
           setIsVisible(true);
-          observer.unobserve(domRef.current!); // Stop observing once it appears
+          observer.unobserve(domRef.current!);
         }
       },
       { 
-        rootMargin: '0px',
-        threshold: 0.1 // Triggers when 10% of the element is visible
+        rootMargin: '50px',
+        threshold: 0.1 
       }
     );
 
@@ -30,12 +49,12 @@ export function FadeInUp({ children, delay = 0, className = "" }: FadeInUpProps)
     }
 
     return () => observer.disconnect();
-  }, []);
+  }, [id]);
 
   return (
     <div
+      id={id} // Apply the ID to the wrapper
       ref={domRef}
-      // Add ${className} right at the start of your classes!
       className={`${className} transition-all duration-1000 ease-out ${
         isVisible 
           ? 'opacity-100 translate-y-0' 
