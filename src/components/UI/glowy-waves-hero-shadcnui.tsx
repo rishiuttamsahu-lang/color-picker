@@ -321,7 +321,7 @@ export function GlowyWavesHero() {
           >
             Welcome to{" "}
             <span className="bg-gradient-to-r from-primary via-primary/60 to-foreground/80 bg-clip-text text-transparent">
-              ChromaGrab
+              ChromaLens
             </span>
           </motion.h1>
 

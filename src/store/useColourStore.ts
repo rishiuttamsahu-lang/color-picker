@@ -52,7 +52,7 @@ export const useColourStore = create<ColourStore>()(
       },
     }),
     {
-      name: 'chromagrab_history',
+      name: 'chromalens_history',
       partialize: (state) => ({ history: state.history }),
     }
   )

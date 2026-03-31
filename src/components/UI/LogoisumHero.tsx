@@ -41,9 +41,9 @@ export function LogoisumHero() {
       >
         <nav className="flex w-[95%] max-w-6xl items-center justify-between rounded-[16px] bg-white px-6 py-3 shadow-sm">
           {/* Logo */}
-          <div className={cn("text-xl font-bold tracking-tight text-gray-900", barlow.className)}>
+          <h1 className={cn("text-xl font-bold tracking-tight text-gray-900 m-0 p-0", barlow.className)}>
             ChromaGrab
-          </div>
+          </h1>
 
           {/* Center Links */}
           <div className={cn("hidden items-center gap-8 text-[14px] font-medium text-gray-800 md:flex", barlow.className)}>
