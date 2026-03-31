@@ -136,17 +136,12 @@ export default function Home() {
         {/* Heading */}
         <FadeInUp delay={0}>
           <div className="mb-10 text-center">
-            <h2
-              className={cn(
-                'text-[28px] md:text-[40px] font-semibold tracking-tight text-gray-900 leading-none',
-                barlow.className,
-              )}
-            >
-              Pick any colour,{' '}
+            <h1 className="font-serif text-2xl font-semibold text-gray-900">
+              ChromaGrab{' '}
               <span className={cn('text-gray-500', instrument.className)} style={{ color: 'lab(45 -45.54 0.59)' }}>
                 instantly.
               </span>
-            </h2>
+            </h1>
             <p className={cn('mt-3 text-[14px] text-gray-500 font-medium', barlow.className)}>
               Click anywhere on the image to extract precise colour values.
             </p>

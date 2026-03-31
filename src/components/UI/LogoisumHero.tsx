@@ -42,7 +42,7 @@ export function LogoisumHero() {
         <nav className="flex w-[95%] max-w-6xl items-center justify-between rounded-[16px] bg-white px-6 py-3 shadow-sm">
           {/* Logo */}
           <div className={cn("text-xl font-bold tracking-tight text-gray-900", barlow.className)}>
-            ChromaLens
+            ChromaGrab
           </div>
 
           {/* Center Links */}
