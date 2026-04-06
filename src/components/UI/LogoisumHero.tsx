@@ -19,7 +19,7 @@ const instrument = Instrument_Serif({
 
 export function LogoisumHero() {
   return (
-    <section className="relative flex min-h-[100vh] w-full flex-col items-center justify-center overflow-hidden bg-black">
+    <section className="relative flex min-h-[100vh] w-full flex-col items-center justify-center overflow-hidden bg-[#65AADD]">
       {/* Background Video */}
       <video
         autoPlay
