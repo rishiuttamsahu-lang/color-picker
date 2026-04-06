@@ -16,7 +16,7 @@ const instrument = Instrument_Serif({
 });
 
 export const metadata = {
-  title: 'Terms of Service | ChromaLens',
+  title: 'Terms of Service | ChromaGrab',
 };
 
 export default function TermsPage() {
@@ -31,7 +31,7 @@ export default function TermsPage() {
             <ArrowLeft className="w-4 h-4" />
             <span className={cn("text-sm font-medium", barlow.className)}>Back to Home</span>
           </Link>
-          <span className={cn("font-bold text-lg tracking-tight", barlow.className)}>ChromaLens</span>
+          <span className={cn("font-bold text-lg tracking-tight", barlow.className)}>ChromaGrab</span>
         </div>
       </header>
 
@@ -49,14 +49,14 @@ export default function TermsPage() {
           <section>
             <h2 className="text-2xl text-gray-900 mb-4">1. Acceptance of Terms</h2>
             <p>
-              By accessing and using ChromaLens (the "Service"), you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by these terms, please do not use this Service.
+              By accessing and using ChromaGrab (the "Service"), you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by these terms, please do not use this Service.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl text-gray-900 mb-4">2. Description of Service</h2>
             <p>
-              ChromaLens is a free, web-based utility designed to extract, convert, and manage colour codes from user-provided images, URLs, and screen captures. The Service is provided "as is" and "as available".
+              ChromaGrab is a free, web-based utility designed to extract, convert, and manage colour codes from user-provided images, URLs, and screen captures. The Service is provided "as is" and "as available".
             </p>
           </section>
 
@@ -77,7 +77,7 @@ export default function TermsPage() {
           <section>
             <h2 className="text-2xl text-gray-900 mb-4">5. Limitation of Liability</h2>
             <p>
-              In no event shall ChromaLens, its developers, or affiliates be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to access or use the Service.
+              In no event shall ChromaGrab, its developers, or affiliates be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to access or use the Service.
             </p>
           </section>
 

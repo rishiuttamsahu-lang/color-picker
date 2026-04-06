@@ -59,7 +59,7 @@ export function MinimalFooter() {
             >
               <Star className="size-4 text-primary" />
               <span className="text-sm font-semibold uppercase tracking-[0.2em] text-foreground">
-                ChromaLens
+                ChromaGrab
               </span>
             </a>
 
@@ -151,7 +151,7 @@ export function MinimalFooter() {
           className="flex flex-col items-center justify-between gap-3 py-6 sm:flex-row"
         >
           <p className="text-xs uppercase tracking-[0.2em] text-foreground/40">
-            © {year} ChromaLens. All rights reserved.
+            © {year} ChromaGrab. All rights reserved.
           </p>
 
           {/* Subtle colour-swatch accent strip */}

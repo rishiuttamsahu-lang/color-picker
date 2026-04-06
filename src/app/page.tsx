@@ -84,7 +84,7 @@ export default function Home() {
 
   const faqs = [
     {
-      question: "Is ChromaLens really free?",
+      question: "Is ChromaGrab really free?",
       answer: "Yes, 100% free. There are no paywalls, no hidden subscriptions, and you don't even need to create an account to use the tool."
     },
     {
@@ -456,7 +456,7 @@ export default function Home() {
                   <div>
                     <h3 className={cn("text-[22px] font-semibold text-gray-900 mb-3", barlow.className)}>100% Local Processing</h3>
                     <p className={cn("text-[15px] text-gray-500 leading-relaxed max-w-md", barlow.className)}>
-                      Your images never leave your device. ChromaLens uses HTML5 Canvas to extract colours directly in your browser, ensuring complete privacy and zero upload times.
+                      Your images never leave your device. ChromaGrab uses HTML5 Canvas to extract colours directly in your browser, ensuring complete privacy and zero upload times.
                     </p>
                   </div>
                   <div className="mt-8 flex gap-2">
@@ -599,7 +599,7 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col sm:flex-row items-center gap-2">
                   <span className={cn("text-[15px] font-medium text-gray-800", barlow.className)}>
-                    Do you like ChromaLens?
+                    Do you like ChromaGrab?
                   </span>
                   <a href="#" className={cn("text-[15px] font-semibold text-[#10986C] hover:text-[#0d805b] hover:underline transition-colors", barlow.className)}>
                     Give our service 5 stars. ↗

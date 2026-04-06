@@ -26,7 +26,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ChromaLens | Fast & Free Multi-Format Color Picker",
+  title: "ChromaGrab | Fast & Free Multi-Format Color Picker",
   description: "Pick any color from images, websites, or your screen instantly. Get HEX, RGBA, HSL, CMYK, and CSS variables with one click. No signup required.",
 };
 

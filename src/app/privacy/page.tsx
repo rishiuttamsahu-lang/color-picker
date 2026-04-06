@@ -16,7 +16,7 @@ const instrument = Instrument_Serif({
 });
 
 export const metadata = {
-  title: 'Privacy Policy | ChromaLens',
+  title: 'Privacy Policy | ChromaGrab',
 };
 
 export default function PrivacyPage() {
@@ -31,7 +31,7 @@ export default function PrivacyPage() {
             <ArrowLeft className="w-4 h-4" />
             <span className={cn("text-sm font-medium", barlow.className)}>Back to Home</span>
           </Link>
-          <span className={cn("font-bold text-lg tracking-tight", barlow.className)}>ChromaLens</span>
+          <span className={cn("font-bold text-lg tracking-tight", barlow.className)}>ChromaGrab</span>
         </div>
       </header>
 
@@ -49,7 +49,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-2xl text-gray-900 mb-4">1. Local Processing & Image Data</h2>
             <p>
-              ChromaLens is built with privacy as its core principle. <strong>We do not upload, store, or process any of your images on external servers.</strong> 
+              ChromaGrab is built with privacy as its core principle. <strong>We do not upload, store, or process any of your images on external servers.</strong> 
               When you upload an image, paste from your clipboard, or use the screen picker, all colour extraction and image rendering happens entirely locally within your browser using the HTML5 Canvas API.
             </p>
           </section>
@@ -57,7 +57,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-2xl text-gray-900 mb-4">2. Data Storage (Local Storage)</h2>
             <p>
-              To improve your user experience, ChromaLens utilizes your browser's Local Storage to save your recent colour history (the last 12 colours you picked). This data remains exclusively on your personal device and is never transmitted to us or any third parties. You can clear this history at any time using the "Clear All" button in the application.
+              To improve your user experience, ChromaGrab utilizes your browser's Local Storage to save your recent colour history (the last 12 colours you picked). This data remains exclusively on your personal device and is never transmitted to us or any third parties. You can clear this history at any time using the "Clear All" button in the application.
             </p>
           </section>
 
