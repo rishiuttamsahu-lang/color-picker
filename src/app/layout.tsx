@@ -81,6 +81,9 @@ export const metadata: Metadata = {
   verification: {
     google: "8qtmD0p7C0NyIPpXQpFyeO-w_TzzLnLPycMB66SB40M",
     yandex: "your-yandex-verification-code",
+    other: {
+      "msvalidate.01": "B58E69E972086DC550087373FA4AFC23",
+    },
   },
   icons: {
     icon: [
