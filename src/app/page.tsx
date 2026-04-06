@@ -82,6 +82,27 @@ export default function Home() {
   const { pickedColour, history, setColour } = useColourStore();
   const { openScanner, isSupported, colorInputRef, handleColorInputChange } = useEyeDropper();
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: 'ChromaGrab',
+    operatingSystem: 'Any (Web Browser)',
+    applicationCategory: 'DesignApplication',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+    },
+    description:
+      'A free, local, browser-based color picker tool to extract HEX, RGB, HSL, and Tailwind colors from images and screens.',
+    featureList: [
+      'Image Color Picker',
+      'Screen Color Picker',
+      'HEX, RGB, HSL, CMYK Converter',
+      'Tailwind CSS Color Matcher',
+    ],
+  };
+
   const faqs = [
     {
       question: "Is ChromaGrab really free?",
@@ -140,6 +161,11 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       <LogoisumHero />
 
       {/* ── Picker Section ── */}
